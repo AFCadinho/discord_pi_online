@@ -5,10 +5,8 @@
 
 [Service]
     Type=oneshot
-
     ExecStart=%h/Desktop/discord_pi_online/.venv/bin/python %h/Desktop/discord_pi_online/discord_webhook.py
     WorkingDirectory=%h/Desktop/discord_pi_online
-    User=%u
 
 [Install]
-    WantedBy=multi-user.target
+    WantedBy=default.target
